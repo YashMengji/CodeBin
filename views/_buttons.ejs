@@ -1,0 +1,14 @@
+<!-- Underscore in filename represents that it is a partial view -->
+
+<div class="div-buttons-wrapper">
+  <a href="/" class="logo-link">codeBin</a>
+  <div class="div-buttons">
+    <a href="/new" class="btn">New</a>
+    <% if(locals.canSave) {%>
+      <button class="btn" type="submit">Save</button>
+    <% } %>
+    <% if(locals.id !== null) {%>
+      <a href="/duplicate/<%= locals.id%>" class="btn">Duplicate</a>
+    <% } %>
+  </div>
+</div>

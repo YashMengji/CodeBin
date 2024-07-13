@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js" integrity="sha512-6yoqbrcLAHDWAdQmiRlHG4+m0g/CT/V9AGyxabG8j7Jk8j3r3K6due7oqpiRMZqcYe9WM2gPcaNNxnl2ux+3tA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/base16/solarized-dark.min.css" integrity="sha512-kBHeOXtsKtA97/1O3ebZzWRIwiWEOmdrylPrOo3D2+pGhq1m+1CroSOVErIlsqn1xmYowKfQNVDhsczIzeLpmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/stylesheets/styles.css" />
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <div class="div-wrapper">
+    <%- include("_buttons.ejs", {id: locals.id}) %>
+    <div class="div-line-numbers">
+      <% for(let i=1; i<=code.split("\n").length; i++) { %>
+        <div><%= i%></div>
+      <% }  %>
+    </div>
+    <pre><code id="code-display" class="<%= locals.language ? `language-${locals.language}` : "" %>"><%= code%></code></pre> <!-- pre displays all of the whitespaces -->
+  </div>
+</body>
+</html>
+

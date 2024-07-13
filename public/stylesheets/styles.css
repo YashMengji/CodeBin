@@ -1,0 +1,79 @@
+body{
+  background-color: #282c34;
+  margin: 0;
+}
+.div-wrapper{
+  display: flex;
+  padding: 1rem .5rem;
+  font-size: 1rem;
+}
+pre{
+  margin: 0;
+}
+#code-display{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.div-line-numbers{
+  color: #7D7D7D;
+  font-family: monospace;
+  text-align: end;
+}
+
+textarea{
+  background-color: transparent;
+  resize: none;
+  width: 100%;
+  padding: 0;
+  margin-left: 1rem;
+  color: #7D7D7D;
+  min-height: calc(100vh - 2rem);
+  border: none;
+  outline: none;
+}
+
+.div-buttons-wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 15;
+  transition: opacity 200ms ease-in-out;
+  background-color: #0081A2;
+  padding: 1rem;
+}
+.div-buttons-wrapper:hover{
+  opacity: 1;
+}
+.logo-link{
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: inline-block;
+}
+.logo-link :hover{
+  text-decoration: underline;
+}
+.div-buttons{
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+.div-buttons > * + * {
+  margin-left: 0.25rem;
+}
+.btn{
+  display: inline-block;
+  color: #002b36;
+  background: none;
+  border: 1px solid #282c34;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 200ms ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #83E5FF;
+}

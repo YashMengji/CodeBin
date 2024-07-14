@@ -6,8 +6,8 @@
     <a href="/new" class="btn">New</a>
     <% if(locals.canSave) {%>
       <button class="btn" type="submit">Save</button>
-    <% } %>
-    <% if(locals.id !== null) {%>
+    <% } %> 
+    <%  if(locals.id != undefined) { %>
       <a href="/duplicate/<%= locals.id%>" class="btn">Duplicate</a>
     <% } %>
   </div>

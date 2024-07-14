@@ -12,12 +12,12 @@
 </head>
 <body>
   <form action="/save" method="POST">
-    <%- include("_buttons.ejs") %>
+    <%- include("_buttons.ejs", {canSave}) %>
     <div class="div-wrapper">
       <div class="div-line-numbers">
         &gt;
       </div>
-      <textarea autofocus name="textInput" id=""><%= locals.value%></textarea> <!-- locals object is always present which contains all local variables (Here value may not be present sometimes hence used local.value) -->
+      <textarea autofocus name="textInput" id=""><%= locals.textInput %></textarea> <!-- locals object is always present which contains all local variables (Here value may not be present sometimes hence used local.value) -->
     </div>
   </form>
 </body>

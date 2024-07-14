@@ -36,7 +36,7 @@ textarea{
   position: fixed;
   top: 0;
   right: 0;
-  opacity: 15;
+  opacity: .15;
   transition: opacity 200ms ease-in-out;
   background-color: #0081A2;
   padding: 1rem;

@@ -1,5 +1,7 @@
 # CodeBin
-
+- Created a web application where users can paste, save, and access code or text via a unique URL ID.
+- Supports document duplication for modifications and editing.
+  
 ## Table of Contents
 1. [Requirements](#requirements)
 2. [Installation](#installation)

@@ -1,3 +1,6 @@
+*{
+  font-family: Arial;
+}
 body{
   background-color: #282c34;
   margin: 0;
@@ -15,7 +18,7 @@ pre{
   padding-bottom: 0;
 }
 .div-line-numbers{
-  color: #7D7D7D;
+  color: whitesmoke;
   font-family: monospace;
   text-align: end;
 }
@@ -26,7 +29,7 @@ textarea{
   width: 100%;
   padding: 0;
   margin-left: 1rem;
-  color: #7D7D7D;
+  color: whitesmoke;
   min-height: calc(100vh - 2rem);
   border: none;
   outline: none;
@@ -36,7 +39,9 @@ textarea{
   position: fixed;
   top: 0;
   right: 0;
-  opacity: .15;
+  opacity: 0.85;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   transition: opacity 200ms ease-in-out;
   background-color: #0081A2;
   padding: 1rem;

@@ -4,7 +4,7 @@ const path = require("path");
 const favicon = require('serve-favicon');
 const documentModel = require("./models/Document.js");
 require('dotenv').config()
-
+ 
 const app = express();
 app.set("view engine", "ejs");
 // Serve the favicon

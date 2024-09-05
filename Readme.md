@@ -9,12 +9,14 @@
 ### 1. Requirements
 - Node js 
 - MongoDB atlas database account
+- Create a database named ```backend_learn```
 
 ### 2. Installation
 - Open root directory in terminal run ```npm i```
 - Create .env file in root directory 
-- Add this line in .env file  ```MONGO_PASS = <your_pass>```
-- Replace <your_pass> with mongodb atlas database password 
+- Add this line in .env file  ```MONGO_PASS = <database_link>```
+- Replace <database_link> with mongodb atlas database link
+- Replace <your_password> in the link with your database password
 
 ### 3. Usage
 - Run ```npm run start```

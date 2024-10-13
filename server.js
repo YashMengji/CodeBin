@@ -14,12 +14,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({extended: true}));
 
 
-mongoose.connect(`${process.env.MONGO_PASS}/backend_learn`);
+mongoose.connect(`mongodb+srv://yash:${process.env.MONGO_PASS}@cluster0.jia8s2u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/backend_learn`);
 
 app.get("/", (req, res) => {
-  const code = `Welcome to codeBin!
-Hi this is yash. 
-  `
+  const code = `Welcome to codeBin! `
   res.render("code_display", {code, language: "plaintext"});
 });
 
